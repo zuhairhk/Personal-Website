@@ -5,7 +5,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('paging.html')
+    # return render_template('index.html')
 
 @app.route('/blog')
 def blog():
@@ -19,9 +20,9 @@ def projects():
 def contact():
     return render_template('contact.html')
 
-@app.route('/sotw')
-def sotw():
-    return render_template('sotw.html')
+@app.route('/tracks')
+def tracks():
+    return render_template('tracks.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
