@@ -58,13 +58,22 @@ h1 {
     padding-top: 400px;
 }
 
-.sotw-heading {
+.headings {
     background-image: linear-gradient(to bottom, rgb(56, 56, 56), rgb(255, 255, 255));
     font-family: "Optima", sans-serif;
+    padding-bottom: 60px;
+}
+
+.sotw-heading {
     font-size: 80px;
     padding-top: 55px;
-    padding-bottom: 60px;
-    color: rgb(53, 51, 51);
+    color: rgb(253, 253, 253);
+}
+
+.sotw-subheading {
+    font-size: 40px;
+    padding-top: 5px;
+    color: rgb(56, 56, 56);
 }
 
 .grid-wrapper {
