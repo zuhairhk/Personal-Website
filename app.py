@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template('paging.html')
-    # return render_template('index.html')
+    # CHANGE WHEN COMPLETE --> return render_template('index.html')
 
 @app.route('/blog')
 def blog():
