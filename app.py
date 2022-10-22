@@ -18,7 +18,7 @@ def projects():
 
 @app.route('/contact')
 def contact():
-    return render_template('rimi.html')
+    return render_template('contacts.html')
 
 @app.route('/tracks')
 def tracks():
