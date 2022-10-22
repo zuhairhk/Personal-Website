@@ -25,7 +25,7 @@ def tracks():
     return render_template('tracks.html')
 
 @app.route('/rimi')
-def tracks():
+def rimi():
     return render_template('rimi.html')
 
 if __name__ == '__main__':
