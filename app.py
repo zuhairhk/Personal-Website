@@ -24,5 +24,9 @@ def contact():
 def tracks():
     return render_template('tracks.html')
 
+@app.route('/rimi')
+def tracks():
+    return render_template('rimi.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
