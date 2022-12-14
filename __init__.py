@@ -15,7 +15,7 @@ def blog():
 @app.route('/projects')
 def projects():
     return render_template('projects.html')
-
+ 
 @app.route('/contact')
 def contact():
     return render_template('contacts.html')
@@ -27,6 +27,7 @@ def tracks():
 @app.route('/rimi')
 def rimi():
     return render_template('rimi.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
