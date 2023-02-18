@@ -1,13 +1,21 @@
 from flask import Flask
-from flask import render_template, redirect
+from flask import render_template, send_file
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "secretkey123"
 
 @app.route('/')
 def index():
-    return render_template('paging.html')
+    return render_template('index.html')
     # return render_template('index.html')
+
+@app.route('/paging')
+def paging():
+    return render_template('paging.html')
+
+@app.route('/resume')
+def resume():
+    return send_file('resume.pdf')
 
 @app.route('/blog')
 def blog():
