@@ -17,6 +17,10 @@ def paging():
 def resume():
     return send_file('resume.pdf')
 
+@app.route('/aim')
+def aim():
+    return send_file('epik_aim.mp4')
+
 @app.route('/blog')
 def blog():
     return render_template('blog.html')
@@ -24,10 +28,6 @@ def blog():
 @app.route('/projects')
 def projects():
     return render_template('projects.html')
- 
-@app.route('/contact')
-def contact():
-    return render_template('contacts.html')
 
 @app.route('/tracks')
 def tracks():

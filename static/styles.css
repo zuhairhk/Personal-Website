@@ -1,18 +1,38 @@
-* {
+/* Apply box-sizing border-box to all elements */
+*, *::before, *::after {
   box-sizing: border-box;
+}
+
+/* Remove default margin and padding for all elements */
+html, body {
   margin: 0;
   padding: 0;
 }
 
+/* Set the background color for the entire page */
+body {
+  background-color: #121212;
+  color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Set the style for the header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  color: #fff;
+  background-color: #262626;
   padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
+/* Style for the navigation menu */
 nav ul {
   list-style: none;
   display: flex;
@@ -23,52 +43,106 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #f0f0f0;
   text-decoration: none;
+  transition: all 0.2s ease;
 }
 
+.about-me  a:hover {
+  color: #bbb;
+}
+
+/* Style for the banner section */
 #banner {
-  background-image: url('your-image-url');
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/002/221/733/original/abstract-flowing-light-ombre-gradient-background-free-video.jpg');
   background-size: cover;
   background-position: center;
-  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #1c1c1c;
 }
 
 #banner h2 {
   font-size: 3rem;
-  color: #000000;
+  font-family: cascadia code;
+  color: #f0f0f0;
   text-align: center;
   margin-bottom: 1rem;
 }
 
 #banner p {
-  font-size: 1.5rem;
-  color: #000000;
+  font-family: cascadia code;
+  font-size: 1rem;
+  color: #f0f0f0;
   text-align: center;
 }
 
+a {
+  text-decoration: none; 
+  color: #8f5ba5; 
+}
+
+/* Style for the main content sections */
 section {
-  margin: 2rem;
+  padding: 2rem;
 }
 
 section h2 {
   font-size: 2rem;
+  font-family: cascadia code;
   text-align: center;
   margin-bottom: 1rem;
 }
 
 section p {
   font-size: 1.2rem;
+  font-family: cascadia code;
   text-align: justify;
 }
 
+.vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+}
+
+.about-me {
+  padding-top: 65px;
+  font-family: cascadia code;
+  width: 45%;
+  max-width: 100%;
+  margin: 0 auto;
+  font-family:Verdana;
+}
+.animated-text {
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Style for the footer */
 footer {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  background-color: #3f0168;
+  color: #ffffff;
   text-align: center;
+  padding: 10px;
 }
