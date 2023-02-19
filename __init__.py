@@ -17,7 +17,7 @@ def paging():
 def resume():
     return send_file('resume.pdf')
 
-@app.route('/aim')
+@app.route('/epik_aim')
 def aim():
     return send_file('epik_aim.mp4')
 
