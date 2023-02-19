@@ -17,23 +17,36 @@
     <main>
       <div class="grid-wrapper">
         <div class="grid-item">
-          <div class="content-wrapper">
+          <div id="digitized_daniel" class="content-wrapper">
             <h2>Digitized Daniel</h2>
             <img src="static/digitized_daniel.png">
             <div class="flex-container">
               <p>IoT Compatible discord bot with additional features such as facial/eye tracking, image generator, web scraping, slash commands, and pomodoro timer.</p>
-              <p style="font-size: 0.72rem; padding: 0; padding-bottom: 10px;"><u>Technologies Used:</u> Python, Nextcord API, OpenCV, TuyaIoT API, PIL, asyncio</p>
+              <p style="font-size:0.72rem; padding:0; padding-bottom:10px; padding-left:8px;"><u>Technologies Used:</u> 
+                Python, 
+                Nextcord API, 
+                OpenCV, 
+                TuyaIoT API, 
+                PIL, 
+                asyncio</p>
             </div>
           </div>
         </div>
 
         <div class="grid-item">
-          <div class="content-wrapper">
+          <div id="personal_website" class="content-wrapper">
             <h2>Personal Website</h2>
-              <img src="static/logo.png">
-              <div class="flex-container">
-                <p>Full-stack personal portfolio web application.</p>
-                <p style="font-size: 0.72rem; padding: 5px; padding-bottom: 10px;"><u>Technologies Used:</u><br>Frontend --> HTML/CSS, Backend --> Python, Framework --> Flask, Hosting --> Linode (Linux Ubuntu VM instance), Proxied through --> Cloudflare</p>
+            <a href="https://github.com/zuhairhk/Personal-Website" target="_blank">
+                <img src="static/logo.png"> </a>
+                <div class="flex-container">
+                  <p>Full-stack personal portfolio web application.</p>
+                  <p style="font-size:0.72rem; padding-right:10px; padding-bottom:10px; padding-left:8px;"><u>Technologies Used:</u> 
+                    Frontend --> HTML/CSS, 
+                    Nextcord API, 
+                    Backend --> Python, 
+                    Framework --> Flask, 
+                    Hosting --> Linode (Linux Ubuntu VM instance), 
+                    Proxied through --> Cloudflare</p>
               </div>
             </div>
         </div>
@@ -41,18 +54,20 @@
         <div class="grid-item">
           <div class="content-wrapper">
             <h2>Light Controller</h2>
-              <img src="static/light_controller.png">
+            <a href="https://github.com/zuhairhk/light_automation" target="_blank">
+              <img src="static/light_controller.png"></a>
               <div class="flex-container">
                 <p style="padding-right: 10px;">Automated the lighting in my room using the TuyaIoT API. Compatible with hands-free voice commands and keyboard input.</p>
                 <p style="font-size: 0.72rem; padding: 0; padding-bottom: 10px;"><u>Technologies Used:</u> Python, TuyaIoT API, Google Speech Recognition, pyttsx3</p>
               </div>
             </div>
         </div>
-
+        
         <div class="grid-item">
           <div class="content-wrapper">
             <h2>Flyte</h2>
-              <img src="static/flyte.png">
+            <a href="https://github.com/zuhairhk/Flyte" target="_blank">
+              <img src="static/flyte.png"></a>
               <div class="flex-container">
                 <p>Currently Working on a 3D multiplayer FPS.</p>
                 <p style="font-size: 0.72rem; padding: 0; padding-bottom: 10px;"><u>Technologies Used:</u> C#, Unity Game Engine, Blender</p>
@@ -63,10 +78,11 @@
         <div class="grid-item">
           <div class="content-wrapper">
             <h2>Auto Food</h2>
-              <img src="static/autofood.jpg">
+            <a href="https://github.com/zuhairhk/autofoodPy" target="_blank">
+              <img src="static/autofood.jpg"></a>
               <div class="flex-container">
                 <p style="padding-right:10px;">Currently working on a mobile application that finds the nearest restaraunt of any cuisine at random within the users area. Compatible with all mobile OS.</p>
-                <p style="font-size: 0.72rem; padding: 0; padding-bottom: 10px;"><u>Technologies Used:</u> Dart, Flutter, Google Places API</p>
+                <p style="font-size: 0.72rem; padding: 0; padding-bottom: 30px;"><u>Technologies Used:</u> Dart, Flutter, Google Places API</p>
               </div>
             </div>
         </div>
@@ -74,7 +90,8 @@
         <div class="grid-item">
           <div class="content-wrapper">
             <h2>Spotify Playlist Sorter</h2>
-              <img src="static/plsorter.png">
+            <a href="https://github.com/zuhairhk/Spotify-Playlist-Sorter" target="_blank">
+              <img src="static/plsorter.png"></a>
               <div class="flex-container">
                 <p>Terminal based application that goes through users unorganized playlist and sorts each song into new genre based playlists.</p>
                 <p style="font-size: 0.72rem; padding: 0; padding-bottom: 10px;"><u>Technologies Used:</u> Python, Spotipy API, Last.fm API</p>
@@ -82,7 +99,35 @@
             </div>
         </div>
       </div>
+
+      <div id="p1Modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <center><iframe width="720" height="480" src="https://www.youtube.com/embed/Qac4kA8xXAQ"></iframe></center>
+          <a href="https://github.com/zuhairhk/RU_Hacks_2022" target="_blank">Check out the code! <i class="fab fa-github" style="font-size: 2em; margin-right: 30px;"></i></a>
+        </div>
+      </div>
+
     </main>
+
+    <script>
+      var modal = document.getElementById("p1Modal");
+      var card = document.getElementById("digitized_daniel");
+      var span = document.getElementsByClassName("close")[0];
+
+      card.onclick = function() {
+        modal.style.display = "block";
+      }
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+
     <footer>
       <a href="mailto:zuhair.khan@torontomu.ca" target="_blank" title="Contact"><i class="fa fa-envelope" style="font-size: 2em; margin-right: 30px;"></i></a>
       <a href="https://github.com/zuhairhk" target="_blank" title="Github"><i class="fab fa-github" style="font-size: 2em; margin-right: 30px;"></i></a>
