@@ -13,7 +13,7 @@ html, body {
 body {
   background-color: #121212;
   color: #f0f0f0;
-  font-family: Arial, sans-serif;
+  font-family: Cascadia Code;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -42,7 +42,7 @@ nav ul {
 nav ul li {
   margin-right: 4rem;
   font-size: 1.3rem;
-  font-family: cascadia code;
+  font-family: 'Open Sans';
 }
 
 nav ul li a {
@@ -73,14 +73,14 @@ nav ul li a {
 
 #banner h2 {
   font-size: 3rem;
-  font-family: cascadia code;
+
   color: #f0f0f0;
   text-align: center;
   margin-bottom: 1rem;
 }
 
 #banner p {
-  font-family: cascadia code;
+
   font-size: 1rem;
   color: #f0f0f0;
   text-align: center;
@@ -98,14 +98,14 @@ section {
 
 section h2 {
   font-size: 2rem;
-  font-family: cascadia code;
+
   text-align: center;
   margin-bottom: 1rem;
 }
 
 section p {
   font-size: 1.2rem;
-  font-family: cascadia code;
+
   text-align: justify;
 }
 
@@ -132,7 +132,7 @@ section p {
 
 .about-me {
   padding-top: 65px;
-  font-family: cascadia code;
+
   width: 45%;
   max-width: 100%;
   margin: 0 auto;
@@ -187,13 +187,13 @@ section p {
 }
 .grid-item h2 {
   color: rgb(233, 232, 232);
-  font-family: cascadia code;
+
   font-size: 1.5rem;
 }
 .grid-item p {
   padding-left: 1.25rem;
   color: aliceblue;
-  font-family: cascadia code;
+
   font-size: 0.9rem;
 }
 
@@ -256,7 +256,7 @@ section p {
 
 .modal a {
   font-size: 1.5em;
-  font-family: cascadia code;
+
   color: #9559af;
 }
 .modal a:hover {

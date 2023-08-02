@@ -1,8 +1,11 @@
 from flask import Flask
-from flask import render_template, send_file
+from flask import render_template, send_file, request, redirect, url_for
+import os
+import sqlite3
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "secretkey123"
+
 
 @app.route('/')
 def index():
@@ -36,6 +39,12 @@ def tracks():
 @app.route('/rimi')
 def rimi():
     return render_template('rimi.html')
+
+@app.route('/voting')
+def voting():
+    directory = 'static/setups'
+    images = [os.path.join(directory, f) for f in os.listdir(directory) if f.endswith(('.jpg', '.png', '.gif', '.webp', '.heic'))]
+    return render_template('voting.html', images=images)
 
 
 if __name__ == '__main__':
